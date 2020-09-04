@@ -12,7 +12,7 @@ public class Ball : MonoBehaviour
     //State
     private Vector2 _paddleToBallVector;
 
-    private bool _hasStarted;
+    private bool _hasStarted = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +25,10 @@ public class Ball : MonoBehaviour
         if (_hasStarted == false)
         {
             LockBallToPaddle(); 
+            LauchOnMouseClick();
         }
         
-        LauchOnMouseClick();
+        
     }
 
     private void LauchOnMouseClick()
