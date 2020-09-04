@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +13,7 @@ public class Ball : MonoBehaviour
     //State
     private Vector2 _paddleToBallVector;
 
-    private bool _hasStarted = false;
+    private bool _hasStarted;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +23,12 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_hasStarted == false)
+        if (!_hasStarted)
         {
             LockBallToPaddle(); 
             LauchOnMouseClick();
         }
-        
-        
+
     }
 
     private void LauchOnMouseClick()
@@ -44,6 +44,14 @@ public class Ball : MonoBehaviour
     {
         Vector2 paddlePos = new Vector2(paddleOne.transform.position.x, paddleOne.transform.position.y);
         transform.position = paddlePos + _paddleToBallVector;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (_hasStarted)
+        {
+            GetComponent<AudioSource>().Play();
+        }
     }
 }
 
