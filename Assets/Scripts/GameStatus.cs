@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class GameStatus : MonoBehaviour
 {
+    //Config
     [Range(0.1f,10f)][SerializeField] private float gameSpeed = 1f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int pointsPerBlockDestroyed = 83;
+    
+    //State
+    [SerializeField] private int currentScore = 0;
+   
 
     // Update is called once per frame
     void Update()
     {
         Time.timeScale = gameSpeed;
+        
+    }
+
+    public void AddToScore()
+    {
+        currentScore += pointsPerBlockDestroyed;
     }
 }

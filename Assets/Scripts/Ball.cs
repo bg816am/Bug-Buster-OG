@@ -3,10 +3,10 @@
 public class Ball : MonoBehaviour
 {
     // Config Params
-    [SerializeField] private Paddle paddleOne;
+    [SerializeField] private Paddle paddleOne = null;
     [SerializeField] private float xPush = 2f;
     [SerializeField] private float yPush = 15f;
-    [SerializeField] private AudioClip[] ballSounds;
+    [SerializeField] private AudioClip[] ballSounds = null;
     
     //State
     private Vector2 _paddleToBallVector;
