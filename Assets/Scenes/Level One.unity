@@ -426,6 +426,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 59717876953732951, guid: 565ae35f0d4874dfa8f5785df8bdc86d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6398524020270944104, guid: 565ae35f0d4874dfa8f5785df8bdc86d, type: 3}
       propertyPath: m_Name
       value: GameStatus
@@ -473,6 +477,10 @@ PrefabInstance:
     - target: {fileID: 6398524020270944106, guid: 565ae35f0d4874dfa8f5785df8bdc86d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6398524020270944107, guid: 565ae35f0d4874dfa8f5785df8bdc86d, type: 3}
+      propertyPath: isAutoPlayEnabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565ae35f0d4874dfa8f5785df8bdc86d, type: 3}
@@ -2842,6 +2850,10 @@ PrefabInstance:
     - target: {fileID: 5060223719848794264, guid: e958a85030e4d4e04acf521d130022c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060223719848794266, guid: e958a85030e4d4e04acf521d130022c8, type: 3}
+      propertyPath: xPadding
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5060223719848794278, guid: e958a85030e4d4e04acf521d130022c8, type: 3}
       propertyPath: m_Name
