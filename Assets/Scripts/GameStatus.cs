@@ -9,6 +9,7 @@ public class GameStatus : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText = null;
     [SerializeField] private bool isAutoPlayEnabled;
     
+    
     //State
     [SerializeField] private int currentScore = 0;
 
@@ -37,7 +38,8 @@ public class GameStatus : MonoBehaviour
         Time.timeScale = gameSpeed;
         
     }
-
+    
+    
     public void AddToScore()
     {
         currentScore += pointsPerBlockDestroyed;
