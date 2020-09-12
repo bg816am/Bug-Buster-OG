@@ -2691,5 +2691,9 @@ PrefabInstance:
       propertyPath: livesText
       value: 
       objectReference: {fileID: 1853870254}
+    - target: {fileID: 5766514983856626488, guid: 16d7e8a7dd8b14dcd9613161b5499bf0, type: 3}
+      propertyPath: numberOfLives
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16d7e8a7dd8b14dcd9613161b5499bf0, type: 3}
