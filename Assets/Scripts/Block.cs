@@ -4,8 +4,8 @@ public class Block : MonoBehaviour
 {
     //Config
     [Header("Graphics and Sound")]
-    [SerializeField] private AudioClip breakSound = null;
-    [SerializeField] private GameObject blockSparklesVFX = null;
+    [SerializeField] private AudioClip breakSound;
+    [SerializeField] private GameObject blockSparklesVFX;
     [SerializeField] private Sprite[] hitSprites;
     
     //Cached References

@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using TMPro;
 public class LoseCollider : MonoBehaviour
 {
@@ -23,10 +21,9 @@ public class LoseCollider : MonoBehaviour
 
         else
         {
-            //Should create a new ball and fix to paddle?
-            //Instantiate(FindObjectOfType<Ball>());
-            FindObjectOfType<Ball>().LauchOnMouseClick();
-            FindObjectOfType<Ball>().LockBallToPaddle();
+            //Put ball back on paddle and stick
+            FindObjectOfType<Ball>().hasStarted = false;
+          
             
         }
     }
