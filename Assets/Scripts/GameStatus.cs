@@ -4,9 +4,12 @@ using UnityEngine;
 public class GameStatus : MonoBehaviour
 {
     //Config
+    [Header("Customization")]
     [Range(0.1f,10f)][SerializeField] private float gameSpeed = 1f;
     [SerializeField] private int pointsPerBlockDestroyed = 83;
+    [Header("Score")]
     [SerializeField] private TextMeshProUGUI scoreText = null;
+    [Header("Cheat mode for testing")]
     [SerializeField] private bool isAutoPlayEnabled;
     
     

@@ -36,7 +36,7 @@ public class Ball : MonoBehaviour
 
     }
 
-    private void LauchOnMouseClick()
+    public void LauchOnMouseClick()
     {
         if (Input.GetMouseButtonDown(0))
         {

@@ -3,6 +3,7 @@
 public class Block : MonoBehaviour
 {
     //Config
+    [Header("Graphics and Sound")]
     [SerializeField] private AudioClip breakSound = null;
     [SerializeField] private GameObject blockSparklesVFX = null;
     [SerializeField] private Sprite[] hitSprites;
@@ -12,6 +13,7 @@ public class Block : MonoBehaviour
     private GameStatus _gameStatus;
     
     //State Variables
+    [Header("For debugging purposes")]
     [SerializeField] private int timesHit;
 
     private void Start()
@@ -22,7 +24,7 @@ public class Block : MonoBehaviour
     private void CountBreakableBlocks()
     {
         _level = FindObjectOfType<Level>();
-        if (tag == "Breakable")
+        if (CompareTag("Breakable"))
         {
             _level.CountBlocks();
         }

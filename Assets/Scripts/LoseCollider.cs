@@ -5,6 +5,7 @@ using TMPro;
 public class LoseCollider : MonoBehaviour
 {
     // trying to add multiple lives
+    [Header("Adjust Lives")]
     [SerializeField] private int numberOfLives = 3;
     [SerializeField] private TextMeshProUGUI livesText;
     //Got red error when using below line
@@ -23,8 +24,10 @@ public class LoseCollider : MonoBehaviour
         else
         {
             //Should create a new ball and fix to paddle?
-            Instantiate(FindObjectOfType<Ball>());
+            //Instantiate(FindObjectOfType<Ball>());
+            FindObjectOfType<Ball>().LauchOnMouseClick();
             FindObjectOfType<Ball>().LockBallToPaddle();
+            
         }
     }
 
